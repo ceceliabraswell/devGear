@@ -93,13 +93,18 @@ body {
 }
 
 .header {
-    background-image: url(images/charlie.jpg);
+    background-image: linear-gradient(
+        to bottom,
+        rgba(0, 0, 0, 0.4),
+        rgba(0, 0, 0, 0)
+    ),
+    url(images/charlie.jpg);
     background-position: center center;
     background-size: cover;
     background-repeat: no-repeat;
 }
 
-.nav {
+nav {
     position: fixed;
     isolation: isolate;
     top: 0;
@@ -161,6 +166,26 @@ body {
     transition: 0.3s;
 }
 
+.header-container {
+    padding-block: 10rem;
+}
+
+.header-container p {
+    font-size: 1.2rem;
+    font-family: var(--header-font);
+    color: var(--white);
+}
+
+.header-container h1 {
+    margin-bottom: 1rem;
+    font-size: 3rem;
+    font-weight: 400;
+    font-family: var(--header-font);
+    line-height: 3rem;
+    color: var(--white);
+}
+
+
 /* media queries */
 @media (width > 768px) {
     nav {
@@ -178,6 +203,18 @@ body {
 
     .nav-links {
         padding: 0;
+        width: 100%;
+        position: static;
+        transform: none;
+        flex-direction: row;
+        justify-content: space-between;
+        background-color: transparent;
     }
+
+    .nav-links .nav-logo {
+        display: block;
+        max-width: 180px;
+    }
+
 }
 
