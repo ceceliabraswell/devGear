@@ -13,3 +13,27 @@ navLinks.addEventListener("click", () => {
     navLinks.classList.remove("open");
     menuBtnIcon.setAttribute("class", "bx bx-menu");
 });
+
+const scrollRevealOption = {
+    origin: "bottom",
+    distance: "50px",
+    duration: 1000,
+};
+
+// header container
+
+ScrollReveal().reveal(".header-content p", {
+    ...scrollRevealOption,
+});
+
+ScrollReveal().reveal(".header-content h1", {
+    ...scrollRevealOption,
+    delay: 500,
+});
+
+ScrollReveal().reveal(".header-content .header-btn", {
+    ...scrollRevealOption,
+    delay: 1000,
+});
+
+
