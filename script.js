@@ -36,4 +36,13 @@ ScrollReveal().reveal(".header-content .header-btn", {
     delay: 1000,
 });
 
+// about us container
 
+ScrollReveal().reveal(".about-container .section-header", {
+    ...scrollRevealOption,
+});
+
+ScrollReveal().reveal(".about-container .section-description", {
+    ...scrollRevealOption,
+    delay: 500,
+});
