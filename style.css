@@ -26,7 +26,18 @@
   overflow: hidden;
 }
 
-
+.section-header {
+  position: relative;
+  isolation: isolate;
+  width: fit-content;
+  margin-inline: auto;
+  margin-bottom: 1rem;
+  padding-inline: 1rem;
+  font-size: 2rem;
+  font-family: var(--header-font);
+  color: var(--text-dark);
+  text-align: center;
+}
 
 img {
   width: 100%;
@@ -119,6 +130,60 @@ nav {
 .header-container {
   padding-block: 10rem;
   min-height: 90vh;
+}
+
+/* Gear favorites section */
+
+.gear-favorites {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.gear {
+  overflow: hidden;
+  background-color: var(--white);
+  color: var(--blue);
+  text-align: center;
+  width: 340px;
+  height: 440px;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 1.2rem;
+  margin: 1rem;
+}
+
+.gear:hover img {
+  scale: 1.1;
+}
+
+.gear:hover {
+  box-shadow: 5px 15px 25px #3f3f3f4e;
+}
+
+.gear img {
+  height: 200px;
+  margin: 1rem;
+  transition: all 0.3s;
+}
+
+.gear a {
+  color: var(--white);
+  display: inline-block;
+  background-color: var(--primary-color);
+  padding: 0.5rem 1.2rem;
+  border-radius: .5rem;
+  margin-top: 1rem;
+  transition: all 0.2s;
+}
+
+.gear a:hover {
+  transform: scale(1.1);
+  background: var(--text-gray);
 }
 
 
