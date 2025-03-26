@@ -144,10 +144,16 @@ nav {
   /* padding: 14px 16px; */
   background-color: inherit;
   font-family: inherit;
+  cursor: pointer;
 }
 
 .shop-content {
   display: none;
+  position: absolute;
+}
+
+.shop-button i {
+  font-size: .75rem;
 }
 
 .header-container {
@@ -237,7 +243,7 @@ nav {
   }
 
   .nav-links a:hover,
-  .shop-button a:hover {
+  .shop-button:hover {
     color: #d2cfcf;
   }
 
