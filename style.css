@@ -120,7 +120,8 @@ nav {
   display: none;
 }
 
-.nav-links a {
+.nav-links a,
+.shop-button {
   position: relative;
   isolation: isolate;
   padding-bottom: 8px;
@@ -129,6 +130,25 @@ nav {
 }
 
 /* styling for shop drop down list */
+
+.shop-dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+.shop-dropdown, 
+.shop-button {
+  font-size: 1.2rem;
+  border: none;
+  outline: none;
+  /* padding: 14px 16px; */
+  background-color: inherit;
+  font-family: inherit;
+}
+
+.shop-content {
+  display: none;
+}
 
 .header-container {
   padding-block: 10rem;
@@ -216,7 +236,8 @@ nav {
     background-color: transparent;
   }
 
-  .nav-links a:hover {
+  .nav-links a:hover,
+  .shop-button a:hover {
     color: #d2cfcf;
   }
 
