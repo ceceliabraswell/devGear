@@ -145,11 +145,25 @@ nav {
   background-color: inherit;
   font-family: inherit;
   cursor: pointer;
+  margin: 0;
 }
 
 .shop-content {
   display: none;
   position: absolute;
+  min-width: 160px;
+  z-index: 1;
+}
+
+.shop-content a {
+  float: none;
+  padding: 12px 16px;
+  display: block;
+  text-align: left;
+}
+
+.shop-dropdown:hover  .shop-content {
+  display: block;
 }
 
 .shop-button i {
